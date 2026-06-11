@@ -4,6 +4,11 @@ public:
 
         int n = nums.size();
         vector<vector<int>> ans;
+
+        if (nums.size() < 4){
+            return ans;
+        }
+
         sort(nums.begin(), nums.end());
 
         for(int i=0; i<n; i++){
