@@ -8,6 +8,8 @@
  */
 class Solution {
 public:
+
+    // Using Tortoise and Hare
     bool hasCycle(ListNode *head) {
         ListNode* slow = head;
         ListNode* fast = head;
