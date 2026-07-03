@@ -45,6 +45,8 @@ public:
             temp = temp->next;
         }
 
-        return dummy->next;
+        ListNode* ans = dummy->next;
+        delete dummy;
+        return ans;
     }
 };
