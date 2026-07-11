@@ -10,12 +10,12 @@ public:
 
         for(right = 0; right<n; right++){
 
-            sum = sum + nums[right];
+            sum += nums[right];
 
             while(sum >= target){
 
                 minLen = min(minLen, right-left+1);
-                sum = sum-nums[left];
+                sum -= nums[left];
                 left++;
             }
         }
